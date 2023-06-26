@@ -2,7 +2,7 @@
 Resource          ../Global/super.robot
 *** Keywords ***
 Launch Browser
-    [Arguments]    ${browser_name}    ${url}
+    [Arguments]    ${browser_name}    ${urll}
     Run Keyword If    '${browser_name}'=='Chrome' or '${browser_name}'=='chrome' or '${browser_name}'=='gc'    Open Browser    ${url}    gc
     Run Keyword If    '${browser_name}'=='Firefox' or '${browser_name}'=='firefox' or '${browser_name}'=='ff'    Open Browser    ${url}    Firefox
 
